@@ -5,7 +5,7 @@
 
 > 📚 University workshop material prepared for the **Database Systems** course at **SRH Berlin University of Applied Sciences**.
 
-A hands-on introduction to Redis, key-value databases, Docker, and RedisInsight through theoretical concepts and practical demonstrations.
+A hands-on introduction to Redis, key-value databases, Docker, and Redis CLI through theoretical concepts and practical demonstrations.
 
 ---
 
@@ -29,7 +29,7 @@ The workshop introduces the fundamentals of key-value databases, explains why Re
 - Redis Data Structures
 - Real-world Use Cases
 - Docker Setup
-- RedisInsight
+- Redis CLI
 - Leaderboard Demonstration
 
 ---
@@ -38,7 +38,7 @@ The workshop introduces the fundamentals of key-value databases, explains why Re
 
 - Redis
 - Docker
-- RedisInsight
+- Redis CLI
 
 ---
 
@@ -48,8 +48,10 @@ The workshop introduces the fundamentals of key-value databases, explains why Re
 redis-workshop
 │
 ├── README.md
+├── LICENSE
 ├── docker-compose.yml
 ├── screenshots/
+│   ├── docker-desktop.png
 │   ├── redis-strings.png
 │   ├── redis-lists.png
 │   ├── redis-hashes.png
@@ -66,9 +68,9 @@ redis-workshop
 
 ## 📄 Presentation
 
-The complete workshop presentation is included in this repository.
+The complete workshop presentation is available here:
 
-**Presentation:** `Key-Value Stores Redis Overview (1).pdf`
+**[Key-Value Stores: Redis Overview (PDF)](./Key-Value%20Stores%20Redis%20Overview%20(1).pdf)**
 
 ---
 
@@ -84,10 +86,17 @@ docker compose up -d
 
 This starts a Redis server on port **6379**.
 
-Then connect using:
+Connect to Redis CLI:
 
-- Redis CLI
-- RedisInsight
+```bash
+docker exec -it redis-workshop redis-cli
+```
+
+Stop the container:
+
+```bash
+docker compose down
+```
 
 ---
 
@@ -114,16 +123,24 @@ ZRANGE leaderboard 0 -1 WITHSCORES
 
 ## 📚 Additional Examples
 
-More Redis examples are available in the **examples** folder.
+More Redis examples are available in the `examples` folder:
 
-- Strings
-- Lists
-- Hashes
-- Sorted Sets
+- [Strings](examples/strings.md)
+- [Lists](examples/lists.md)
+- [Hashes](examples/hashes.md)
+- [Sorted Sets](examples/sorted-sets.md)
 
 ---
 
 ## 🖼 Demo Screenshots
+
+### Docker Desktop
+
+Redis running inside a Docker container.
+
+![Docker Desktop](screenshots/docker-desktop.png)
+
+---
 
 ### Redis Strings
 
@@ -149,7 +166,7 @@ Storing structured objects using `HSET` and `HGETALL`.
 
 ---
 
-### Redis Sorted Sets (Leaderboard)
+### Redis Sorted Sets — Leaderboard
 
 Building a simple leaderboard using Redis Sorted Sets.
 
@@ -160,3 +177,9 @@ Building a simple leaderboard using Redis Sorted Sets.
 ## 🤝 Acknowledgements
 
 Prepared as part of the **Database Systems** course at **SRH Berlin University of Applied Sciences**.
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
