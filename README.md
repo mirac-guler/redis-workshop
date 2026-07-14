@@ -43,6 +43,7 @@ The workshop introduces the fundamentals of key-value databases, explains why Re
 
 The complete workshop presentation is included in this repository.
 
+**Presentation:** `Key-Value Stores Redis Overview (1).pdf`
 ---
 
 ## 🚀 Quick Start
