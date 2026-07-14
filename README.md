@@ -50,6 +50,9 @@ redis-workshop
 ├── README.md
 ├── LICENSE
 ├── docker-compose.yml
+├── redis-workshop.pdf
+├── presentation/
+│   └── cover.png
 ├── screenshots/
 │   ├── docker-desktop.png
 │   ├── redis-strings.png
@@ -61,16 +64,19 @@ redis-workshop
 │   ├── lists.md
 │   ├── hashes.md
 │   └── sorted-sets.md
-└── Key-Value Stores Redis Overview (1).pdf
 ```
 
 ---
 
 ## 📄 Presentation
 
-The complete workshop presentation is available here:
+The complete workshop presentation is included in this repository.
 
-**[Key-Value Stores: Redis Overview (PDF)](./Key-Value%20Stores%20Redis%20Overview%20(1).pdf)**
+📥 **[Download the Workshop Presentation (PDF)](./redis-workshop.pdf)**
+
+### Cover Preview
+
+![Workshop Cover](presentation/cover.png)
 
 ---
 
@@ -123,7 +129,7 @@ ZRANGE leaderboard 0 -1 WITHSCORES
 
 ## 📚 Additional Examples
 
-More Redis examples are available in the `examples` folder:
+More Redis examples are available in the `examples` folder.
 
 - [Strings](examples/strings.md)
 - [Lists](examples/lists.md)
@@ -174,9 +180,15 @@ Building a simple leaderboard using Redis Sorted Sets.
 
 ---
 
-## 🤝 Acknowledgements
+## 🤝 Credits
 
-Prepared as part of the **Database Systems** course at **SRH Berlin University of Applied Sciences**.
+The workshop presentation was prepared collaboratively by:
+
+- Mirac Mert Güler
+- Anthony Kerr
+- Milica Topic
+
+The GitHub repository, documentation, Docker configuration, additional examples, screenshots, and repository organization were prepared and maintained by **Mirac Mert Güler**.
 
 ---
 
