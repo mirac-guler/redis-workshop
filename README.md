@@ -1,7 +1,8 @@
 # Redis Workshop
-> 📚 University workshop material prepared for the Database Systems course at SRH Berlin University of Applied Sciences.
 
-A university workshop introducing Redis, key-value databases, Docker, and RedisInsight through both theoretical concepts and hands-on demonstrations.
+> 📚 University workshop material prepared for the **Database Systems** course at **SRH Berlin University of Applied Sciences**.
+
+A hands-on introduction to Redis, key-value databases, Docker, and RedisInsight through theoretical concepts and practical demonstrations.
 
 ---
 
@@ -9,23 +10,24 @@ A university workshop introducing Redis, key-value databases, Docker, and RedisI
 
 This repository contains the presentation and supporting materials prepared for a university workshop on Redis.
 
-The workshop covers the fundamentals of key-value databases, explains how Redis achieves its high performance, introduces its most commonly used data structures, and demonstrates practical use cases through live examples.
+The workshop introduces the fundamentals of key-value databases, explains why Redis achieves extremely high performance, explores its core data structures, and demonstrates practical use cases through live examples.
 
 ---
 
-## ✨ Highlights
+## 📚 Topics Covered
 
-- Introduction to SQL vs NoSQL
-- Understanding Key-Value Databases
+- SQL vs NoSQL
+- Key-Value Databases
+- Redis Fundamentals
 - Redis Architecture
 - In-Memory Storage
 - Persistence (RDB & AOF)
-- Redis Data Structures
 - Time Complexity (O(1) & O(log N))
-- Real-world Redis Use Cases
+- Redis Data Structures
+- Real-world Use Cases
 - Docker Setup
 - RedisInsight
-- Live Leaderboard Demonstration
+- Leaderboard Demonstration
 
 ---
 
@@ -41,31 +43,17 @@ The workshop covers the fundamentals of key-value databases, explains how Redis 
 
 The complete workshop presentation is included in this repository.
 
-Topics covered include:
-
-- Database fundamentals
-- Key-value stores
-- Redis architecture
-- Redis persistence
-- Redis data structures
-- Performance characteristics
-- Practical use cases
-- Live demonstrations
-
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
-To run Redis locally using Docker:
+Run Redis locally using Docker:
 
 ```bash
 docker run -d --name redis-server -p 6379:6379 redis
 ```
 
-After the container starts, connect using:
-
-- Redis CLI
-- RedisInsight
+Then connect using **Redis CLI** or **RedisInsight**.
 
 ---
 
@@ -73,13 +61,11 @@ After the container starts, connect using:
 
 ```redis
 SET username "mirac"
-
 GET username
-
 DEL username
 ```
 
-Example Sorted Set:
+Sorted Set example:
 
 ```redis
 ZADD leaderboard 100 Alice
@@ -90,16 +76,6 @@ ZRANGE leaderboard 0 -1 WITHSCORES
 
 ---
 
-## 📚 Repository Purpose
-
-This repository was created as a learning resource accompanying a university workshop. Its purpose is to provide an accessible introduction to Redis concepts, practical examples, and deployment using Docker.
-
----
-
-## 📜 License
-
-Released under the MIT License.
-
 ## 🤝 Acknowledgements
 
-This workshop was prepared as part of the Database Systems course at SRH Berlin University of Applied Sciences.
+Prepared as part of the **Database Systems** course at **SRH Berlin University of Applied Sciences**.
