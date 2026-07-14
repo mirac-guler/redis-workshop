@@ -13,7 +13,7 @@ A hands-on introduction to Redis, key-value databases, Docker, and RedisInsight 
 
 This repository contains the presentation and supporting materials prepared for a university workshop on Redis.
 
-The workshop introduces the fundamentals of key-value databases, explains why Redis achieves extremely high performance, explores its core data structures, and demonstrates practical use cases through live examples.
+The workshop introduces the fundamentals of key-value databases, explains why Redis achieves high performance, explores its core data structures, and demonstrates practical use cases through hands-on examples.
 
 ---
 
@@ -42,32 +42,58 @@ The workshop introduces the fundamentals of key-value databases, explains why Re
 
 ---
 
+## 📂 Repository Structure
+
+```text
+redis-workshop
+│
+├── README.md
+├── docker-compose.yml
+├── screenshots/
+│   ├── redis-strings.png
+│   ├── redis-lists.png
+│   ├── redis-hashes.png
+│   └── redis-leaderboard.png
+├── examples/
+│   ├── strings.md
+│   ├── lists.md
+│   ├── hashes.md
+│   └── sorted-sets.md
+└── Key-Value Stores Redis Overview (1).pdf
+```
+
+---
+
 ## 📄 Presentation
 
 The complete workshop presentation is included in this repository.
 
 **Presentation:** `Key-Value Stores Redis Overview (1).pdf`
+
 ---
 
 ## 🚀 Quick Start
 
-Run Redis locally using Docker:
-
-```bash
 ### Using Docker Compose
+
+Run Redis locally:
 
 ```bash
 docker compose up -d
 ```
 
 This starts a Redis server on port **6379**.
-```
 
-Then connect using **Redis CLI** or **RedisInsight**.
+Then connect using:
+
+- Redis CLI
+- RedisInsight
 
 ---
 
 ## 💻 Example Commands
+
+### Strings
 
 ```redis
 SET username "mirac"
@@ -75,7 +101,7 @@ GET username
 DEL username
 ```
 
-Sorted Set example:
+### Sorted Sets
 
 ```redis
 ZADD leaderboard 100 Alice
@@ -85,6 +111,16 @@ ZRANGE leaderboard 0 -1 WITHSCORES
 ```
 
 ---
+
+## 📚 Additional Examples
+
+More Redis examples are available in the **examples** folder.
+
+- Strings
+- Lists
+- Hashes
+- Sorted Sets
+
 ---
 
 ## 🖼 Demo Screenshots
@@ -107,17 +143,19 @@ Working with ordered collections using `LPUSH` and `LRANGE`.
 
 ### Redis Hashes
 
-Storing structured objects with `HSET` and `HGETALL`.
+Storing structured objects using `HSET` and `HGETALL`.
 
 ![Redis Hashes](screenshots/redis-hashes.png)
 
 ---
 
-### Sorted Set Leaderboard
+### Redis Sorted Sets (Leaderboard)
 
 Building a simple leaderboard using Redis Sorted Sets.
 
 ![Redis Leaderboard](screenshots/redis-leaderboard.png)
+
+---
 
 ## 🤝 Acknowledgements
 
