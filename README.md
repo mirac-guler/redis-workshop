@@ -1,18 +1,32 @@
 # Redis Workshop
 
-A hands-on Redis workshop demonstrating the core concepts of Redis, including Docker setup, RedisInsight, fundamental data structures, and a simple leaderboard example.
+A university workshop introducing Redis and key-value databases through theory, Docker, RedisInsight, and hands-on demonstrations.
 
----
+## 📖 About
 
-## 📌 Overview
+This repository contains the presentation and learning materials prepared for a university workshop about Redis.
 
-This repository contains the materials I prepared for a university workshop introducing Redis.
+The workshop introduces the fundamentals of Redis, explains why key-value databases are extremely fast, and demonstrates common Redis data structures through practical examples.
 
-The goal of this workshop was to explain:
+## 📚 Topics Covered
 
-- What Redis is
-- Why Redis is useful
-- How to run Redis using Docker
-- How to explore data with RedisInsight
-- Common Redis data structures
-- A simple leaderboard implementation using Sorted Sets
+- SQL vs NoSQL
+- Key-Value Databases
+- Redis Fundamentals
+- Redis Architecture
+- Persistence (RDB & AOF)
+- Redis Data Structures
+- Real-world Use Cases
+- Docker Setup
+- RedisInsight
+- Leaderboard Example
+  
+  ## 🛠 Technologies
+
+- Redis
+- Docker
+- RedisInsight
+  
+  ## 📄 Presentation
+
+The presentation used during the workshop is included in this repository.
