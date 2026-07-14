@@ -75,6 +75,39 @@ ZRANGE leaderboard 0 -1 WITHSCORES
 ```
 
 ---
+---
+
+## 🖼 Demo Screenshots
+
+### Redis Strings
+
+Basic key-value operations using `SET`, `GET`, and `DEL`.
+
+![Redis Strings](screenshots/redis-strings.png)
+
+---
+
+### Redis Lists
+
+Working with ordered collections using `LPUSH` and `LRANGE`.
+
+![Redis Lists](screenshots/redis-lists.png)
+
+---
+
+### Redis Hashes
+
+Storing structured objects with `HSET` and `HGETALL`.
+
+![Redis Hashes](screenshots/redis-hashes.png)
+
+---
+
+### Sorted Set Leaderboard
+
+Building a simple leaderboard using Redis Sorted Sets.
+
+![Redis Leaderboard](screenshots/redis-leaderboard.png)
 
 ## 🤝 Acknowledgements
 
