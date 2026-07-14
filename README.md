@@ -54,7 +54,13 @@ The complete workshop presentation is included in this repository.
 Run Redis locally using Docker:
 
 ```bash
-docker run -d --name redis-server -p 6379:6379 redis
+### Using Docker Compose
+
+```bash
+docker compose up -d
+```
+
+This starts a Redis server on port **6379**.
 ```
 
 Then connect using **Redis CLI** or **RedisInsight**.
